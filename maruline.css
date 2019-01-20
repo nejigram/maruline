@@ -1,0 +1,64 @@
+/* common */
+.bk_grn{
+    background-color:#bde673;
+}
+.bk_pp{
+    background-color:#7b7bb4;
+}
+/* maruline */
+.maruline{
+    display: inline-flex;
+    width:100%;
+    visibility: hidden;
+}
+.maruline .box{
+    width:33%;
+
+
+}
+.maruline .box .area{
+    width:100%;
+    height:100%;
+    position:relative;
+    padding:1em;
+}
+.maruline  .box .area .maru{
+    margin:1em;
+    width:100%;
+    height:100%;
+
+    border-radius: 50%;
+    position:relative;
+    top:0px;
+    left:0px;
+
+    transition: transform 1s,top 1s,left 1s;
+}
+.maruline  .box .area .maru.on{
+    transform:scale(0.5);
+    top:-25%;
+    left:0%;
+}
+.maruline  .box .area .str{
+    position:absolute;
+    font-size:0.5em;
+    bottom:0%;
+    width:100%;
+    height:45%;
+    text-align:center;
+    opacity: 0;
+    line-height:3em;
+    transition: opacity .5s;
+    transition-delay: .5s;
+}
+.maruline  .box .area .str span{
+    border-bottom:1px #000 dashed;
+}
+.maruline  .box .area .str.on{
+    opacity: 1;
+}
+.bk_maru_img{
+    background-size:80% 80%;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
